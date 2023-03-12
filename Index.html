@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="input-dis" id="input">
+                    <input class="inputfield" type="text" name="display" id="display"/>
+                </div>
+                <div class="button-operators">
+                    <div>  
+                        <input class="operator" type="button" value="AC" id="btnAC" onclick=" display.value = ''" />
+                        <input class="operator" type="button" value="DE" id="btnDE" onclick=" display.value = display.value.toString().slice
+                        (0, -1)"/>
+                        <input class="operator" type="button" value="." id="btn."  onclick=" display.value += '.'"/>
+                        <input class= "operator" type ="button" value="/"id="btn/"  onclick=" display.value += '/'"/>
+                    </div>
+                    <div>  
+                        <input class="button" type="button" value="7" id="btn7" onclick=" display.value += '7'" />
+                        <input class="button" type="button" value="8" id="btn8" onclick=" display.value += '8'" />
+                        <input class="button"  type="button" value="9" id="btn9"  onclick=" display.value += '9'"/>
+                        <input class="operator" type="button" value="*" id="btn*"  onclick=" display.value += '*'"/>
+                    </div>
+                    <div>  
+                        <input class="button" type="button" value="4" id="btn4"  onclick=" display.value += '4'"/>
+                        <input class="button"  type="button" value="5" id="btn5"  onclick=" display.value += '5'"/>
+                        <input class="button" type="button" value="6" id="btn6"  onclick=" display.value += '6'"/>
+                        <input class="operator" type="button" value="-" id="btn-"  onclick=" display.value += '-'"/>
+                    </div>
+                    <div>  
+                        <input class="button" type="button" value="1" id="btn1"  onclick=" display.value += '1'"/>
+                        <input class="button" type="button" value="2" id="btn2"  onclick=" display.value += '2'"/>
+                        <input class="button" type="button" value="3" id="btn3" onclick=" display.value += '3'"/>
+                        <input class="operator" type="button" value="+" id="btn+" onclick=" display.value += '+'"/>
+                    </div>
+                    <div>  
+                        <input class="button" type="button" value="00"id="btn00"  onclick=" display.value += '00'"/>
+                        <input class="button" type="button" value="0" id="btn0" onclick=" display.value += '0'"/>
+                        <input class="operator" type="button" onclick="display.value = eval(display.value)" value="=" id="equal"/>
+                    </div>
+                </div>
+            </form>
+            <footer class="footer-wrapper" style="display: flex; justify-content: center;">
+                        <div class="Astro-footer" style="display: flex; justify-content:center; padding: 10px; 
+                        font-weight: 600; letter-spacing: .5px; ">
+                             <p style="color:#33ffd8;">ASTROO</p>
+                        </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
